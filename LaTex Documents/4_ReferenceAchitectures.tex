@@ -1,0 +1,44 @@
+\begin{description}
+\item In this section the use of reference architectures and frameworks will be discussed. Reasons will be provided why the specific technologies is being considered. 
+\end{description}
+
+\subsection{Reference Framework}
+
+For the reference framework we are considering the Spring Reference Framework (Tutorialspoint.com). This framework can make use of extensions to build web applications on top of the Java EE platform, and this is what we intend on doing. There are many benefits to using the Spring Reference Framework, and a few specifically pertaining to the development of the Buzz Space system are as follows: 
+
+\begin{itemize}
+\item The Spring framework is organized in a modular fashion, so only necessary packages and classes have to be used. This decreases the learning curve substantially. 
+\item Springs web framework employs a very well designed MVC framework, and MVC is one of the core Architectural Patterns we are considering. 
+\item Spring supports Inversion of Control in the form of dependency injection, which works very well with the domain based design of the Buzz Space system. 
+\item Fully supports Object Relational Databases like PostgreSQL. 
+\item Has a remote access framework that supports SOAP and Cobra.
+\item Has Classes for writing unit and integration test. 
+\end{itemize}
+
+\subsection{Object relational mapping}
+
+We intend to use the PostgreSQL(Postgresql.org) database technology to implement object relational mapping. There are many reasons for this decision, of which some will be discussed below.
+
+\begin{itemize}
+\item PostgreSQL is very reliable and stable, which is very important since very important academic data will be persisted on the database. 
+\item It is designed for high volume environments, and employs MVCC. This is important to support the large quantities of users that will be using the system concurrently. 
+\item PostgreSQL uses a GUI database design and administrative tools, which will make implementation and maintenance easier. 
+\item It integrates very well with the Spring framework and Java-EE. 
+\item It is ACID compliant. 
+\item SQL based queries are used, which most students implementing the system are familiar with. 
+\item It supports Binary and textual large-object storage, which will enable students to upload larger files to the system, which will then be managed by the database. 
+\end{itemize}
+
+\subsection{Application Server}
+
+For the application server that will host the web based applications and applets, we intend to use GlassFish. Some of the reasons for using GlassFish will now be discussed:
+
+\begin{itemize}
+\item GlassFish is free to use and open source. 
+\item It integrates seamlessly with Java-EE, with no need for extensions. 
+\item It is an Java-EE certified application server.
+\item It is the fastest open source application server available. 
+\item It is easy to use. 
+\item GlassFish integrates well with all the other technologies being considered. 
+\end{itemize}
+
