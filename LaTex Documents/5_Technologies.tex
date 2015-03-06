@@ -1,0 +1,52 @@
+\begin{description}
+	\item Firstly we advise that the system be completely thin client web based. This enables various platforms and devices to make use of the system from the get go. Using thick clients or platform specific implementations will negatively affect usability. 
+\end{description}
+
+\subsection{Front End Technologies}
+
+\begin{itemize}
+	\item	HTML5 (Fully compliant to latest standards)
+	\item	JavaScript and CSS3 for styling
+	\item	BootStrap for styling and responsive design (this enables devices of all screen sizes to make use of the system, and improves maintainability significantly). 
+	\item	Jquery Mobile will probably also help a lot for mobile web development.
+	\item	AJAX should be employed to enhance the user experience. 
+	\item	The AngularJS JavaScript framework can be used to create apps on the various pages of the front end. AngularJS follows the MVC architectural pattern, which we believe is a very good way to design and implement a front end.
+	\item	Naturally, most of the technologies mentioned will make use of the latest JQuery library. 
+\end{itemize}
+
+\subsection{Back End Technologies}
+
+\subsubsection{Database technology}
+
+As an object-relational database management system we recommend considering PostgreSQL. There are many reasons to recommend postgres, but most importantly it is not difficult to use and:
+
+\begin{itemize}
+\item	It is ACID compliant
+\item	It uses Multiversion Concurrency Control (MVCC) to avoid deadlock and allow for many concurrent users which enhances scalability. 
+\item	Uses SQL based queries which most students have experience with. 
+\item	It supports Binary and textual large-object storage, which will enable students to upload larger files to the system, which will then be managed by the database. 
+\end{itemize}
+
+\subsubsection{Application Framework}
+
+We are looking at the Spring Framework that works as a layer on top of Java EE. Quite a few reasons exist for this, but mainly because Spring:
+
+\begin{itemize}
+\item	Supports NoSQL databases like PostgreSQL.
+\item	Employs Model-View-Controller (MVC) architecture. 
+\item	Has a remote access framework that supports SOAP and Cobra. 
+\item	Has Classes for writing unit and integration test. 
+\item	Is not too difficult to learn. 
+\end{itemize}
+
+An alternative to Spring, is Django. A comparison can be seen here: \url{http://vschart.com/compare/spring-framework/vs/django-framework}
+
+One quite significant advantage of Spring is that it supports Domain Driven Design, which works very well with the way the BuzzSpace mini project is being structured. 
+
+\subsubsection{Application Server}
+
+The applications that will run on the BuzzSpace website have to have some sort of server to run on. One of the best Application servers that integrates well with the Spring framework, is the GlassFish Application server. Read more here: \url{https://glassfish.java.net/}
+
+\subsubsection{Dependancy Management}
+
+We recommend the use of apache maven for dependency management. Apache Maven integrates well with the Spring Framework. 
