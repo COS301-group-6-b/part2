@@ -1,0 +1,82 @@
+\documentclass[11pt,a4paper,titlepage]{article}
+
+\usepackage{pdflscape}
+\usepackage[margin=1in]{geometry}
+\usepackage{titling}
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
+
+
+\DeclareGraphicsExtensions{.png, .jpg}
+\graphicspath{ {./images/} }
+
+
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+} 
+
+\begin{document}
+
+
+\title{ \huge Software Architecture Documentation for the Buzz System}
+\subtitle{\large Git: \url{https://github.com/COS301-group-6-b/part2}}
+
+\author
+{ 
+	\large \textbf{COS 301 Group 6\_b} \\
+	%INSERT YOUR NAMES AND STUDENT NUMBERS HERE
+	Anrich van Schalkwyk 13024427 \\
+}
+    
+\date{\textbf{March 2015}}
+
+\maketitle
+
+\tableofcontents
+
+
+% Put all images in images folder
+\pagebreak
+
+\section{Architecture requirements}
+	\subsection{Architectural Scope}
+
+	\input{1_1_ArchitecturalScope}
+
+	\subsection{Quality Requirements}
+
+	\input{1_2_QualityRequirements}
+
+	\subsection{Integration and access channel requirements}
+
+	\input{1_3_IntegrationAccess}
+
+	\subsection{Architectural constraints}
+
+	\input{1_4_ArchitecturalConstraints}
+
+\section{Architectural patterns or styles}
+
+	\input{2_PatternsStyles}
+
+\section{Architectural tactics or strategies}
+
+	\input{3_ArchitecturalScope}
+
+\section{Use of reference architectures and frameworks}
+
+	\input{4_ReferenceAchitectures}
+	
+
+\section {Technologies}
+
+\input{5_Technologies}
+
+\section{Test Section}
+
+\input{test}
+
+\end{document}
