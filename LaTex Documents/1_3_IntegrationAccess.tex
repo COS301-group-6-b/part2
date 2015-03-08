@@ -1,0 +1,16 @@
+\subsubsection{Integration channel requirements}
+The buzz system needs to integrate with the LDAP server for the user information on login. We will create a module using the JNDI [1] API in order to make the connection to the LDAP server. This will be created as a seperate module so that it can be replaced to support a different system.\\
+\\
+For the backend we are going to be using JavaEE and to interface with the system we are going to make use of JSP and a Sprint protocol. This will mean that we can integrate with the thin web based client. It also means that we can make use of technologies like bootstrap to inharnce the web pages for moblie access.\\
+\\
+Due to the fact that we are going to be running JSP pages, we are going to need to make use of tomcat as the server base for the JSP pages to render on and integrate with our JavaEE backend.\\
+\\
+We are going to be making use of a postgreSQL database to store all the buzz generated information. To connect the system to the database we are going to make use of the JDBC driver [2].\\
+\\
+We are going to make use of the JavaMail API [3] to intergrate the buzz system with an emailing protocol so that the buzz system can send emails and notifications to the users.\\
+\\
+Codejava.net,. 'Connecting To LDAP Server Using JNDI In Java'. N.p., 2015. Web. 5 Mar. 2015.  
+\\
+Mkyong.com,. 'Connect To Postgresql With JDBC Driver'. N.p., 2009. Web. 5 Mar. 2015.
+\\
+Tutorialspoint.com,. 'JSP - Sending Email'. N.p., 2015. Web. 5 Mar. 2015.
