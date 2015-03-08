@@ -1,0 +1,11 @@
+\subsubsection{Security}
+Security will be a relatively low level priority (important but not critical) in the Buzz system as more importance will need to be placed on other aspects such as usability and scalability. A Secure system focuses on three main aspects, namely: to detect attacks, resist attacks and recover from attacks.\\
+\\
+We will, however, in the buzz system only be focusing on resisting attacks as most of the users will be members of an educational institution and we assume that they are ethical and will not try to attack using unconventional means.\\
+\\
+We will also be using LDAP (Lightweight Directory Access Protocol) to log the users in and have a secure way of connecting (Webopedia.com, 2015). LDAP is a set of protocols based on standards within the x.500 standard (Webopedia.com, 2015)\\
+\\
+Passwords should also be hashed, salted password hashing is the best way to do this to avoid the use of lookup tables, reverse lookup tables and rainbow lookup tables to find passwords (Crackstation.net, 2014). The SHA256 hashing function with salt added should be sufficient for our needs.\\
+\\
+The connection to the servers will be done using https and POST requests for purposes of hiding passwords. We will allow for 5 failed attempts to log in to the server and then block that user out for 5 minutes to discourage bot attacks, this might, however, have an impact on usability.\\
+\\
