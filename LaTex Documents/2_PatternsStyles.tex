@@ -11,18 +11,26 @@ Quality Requirements using master-slave pattern:\\
 \\
 Scalability: Can be achieved by splitting work into independent sub-tasks executed by independent nodes.\\
 \subsubsection{Black-Boarding}
-Description:\\
+Description: The black-boarding pattern focuses on giving a group of processing units the problem to solve together as a team. (Solms, 2014)\\
 \\
 Quality Requirements using black-boarding pattern:\\
 \\
-Scalability: Black-boarding makes achieving scalability across processors, subject to scalable implementation of the blackboard, easy (Solms, 2014).\\ 
+Scalability: Black-boarding makes achieving scalability across processors, subject to scalable implementation of the blackboard, easy (Solms, 2014).\\
+\\
+ Performance: Black-boarding improves performance by improving the turnaround time as many processing units can work on the same problem at the same time.\\ 
 \subsubsection{Bridge}
 Description: Bridge is aimed at abstracting the higher lever system from its lower level services and infrastructure.This ensures that the System is auditable on any platform on which it is run.\\
 \\
 Quality Requirements using bridge pattern: Monitoribility and Auditability\\
 \\
 Scalability: Bridge achieves scalabaility in that high level and low level services are separated from one another and are therefore independant fo each other.\\
-
+ \subsubsection{Layering}
+ Description: The layering pattern components are organized in layers and each layer is assigned some kind of responsibility. (Solms, 2014)\\
+ \\
+ Quality Requirements using the layering pattern:\\
+ \\
+ Security: Layering separates the communication from the actual application meaning it is more difficult for users to see and intercept communication between the client and server.\\
+ 
 \subsubsection{Microkernel}
 Description: Microkernel is closely related to Bridge Pattern because it provides an infrastructure that handles requests from the user and the system at a high level and delegates the necessary actions to all the appropriate modules where these requests are handled and responses are returned.
 \\
