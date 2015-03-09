@@ -16,3 +16,16 @@ Description:\\
 Quality Requirements using black-boarding pattern:\\
 \\
 Scalability: Black-boarding makes achieving scalability across processors, subject to scalable implementation of the blackboard, easy (Solms, 2014).\\ 
+\subsubsection{Bridge}
+Description: Bridge is aimed at abstracting the higher lever system from its lower level services and infrastructure.This ensures that the System is auditable on any platform on which it is run.\\
+\\
+Quality Requirements using bridge pattern: Monitoribility and Auditability\\
+\\
+Scalability: Bridge achieves scalabaility in that high level and low level services are separated from one another and are therefore independant fo each other.\\
+
+\subsubsection{Microkernel}
+Description: Microkernel is closely related to Bridge Pattern because it provides an infrastructure that handles requests from the user and the system at a high level and delegates the necessary actions to all the appropriate modules where these requests are handled and responses are returned.
+\\
+Quality Requirements using Microkernel pattern:\\
+\\
+Scalability: Microkernel makes scalability easier because because the infrastructure it provides ensures that the high level requirements of the system are unaware of the underlying infrastructure.\\
