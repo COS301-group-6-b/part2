@@ -1,98 +1,10 @@
-
-\subsubsection{Human Channels}
-\begin{description}
-\item \hspace{4ex}
- The buzz System will be used by a viriaty of devices and the kind type of 
- Application clients whether thick or thin clients needs to be considered.
-\end{description}
-
-
-\paragraph{Thick clients: } 
-\begin{description}
- \item \hspace{4ex} 
-Thick clients do not rely on the central processing server due to the fact that is has the software installed and the Hardware to maintain the processing and only uses the server for data.
-  It is not really viable to use Thick clients in a public space because it requires uniformity in the hardware of the devices that are going to use it and for buzz space going a thick client approach limits scalability. (Bea, 2006)
-\end{description}
-
-\paragraph{Pros: } 
- \begin{itemize}	
-		\item The application can be customized more(Bea, 2006).
-                      \item In some situations it does not need a connection to the server only needs it to update data that is already on the phone this makes it inexpensive in terms of internet expense(Bea, 2006).
-	\end{itemize}
-\paragraph{Cons: } 
- \begin{itemize}	
-		\item The processing efficiency is dependent on the device if the device is a slow device the application will be slow (Bea, 2006).
-                      \item 	Maintenance needs to be done on every deceive ei. Updating the software (Bea, 2006).
-	\end{itemize}
-
-
-
-\paragraph{Thin clients:}
-\begin{description}
-\item \hspace{4ex}
-A thin client needs little hardware and software to operate because it always communicates to the main central processing server basically the thin client is used as a view. Thin clients are very efficient to use in an environment where the same information is shared this is ideal for buzz space because all threads are shared amongst multiple users (Bea, 2006).
-\end{description}
-\paragraph{Pros: } 
- \begin{itemize}	
-		\item No hardware specification because all the processing is done on the server (Bea, 2006).
-		\item Can work efficiently any device as long it has the software to access the server (Bea, 2006).
-		\item Maintenance is simple because it only has to update the server and not every single device (Bea, 2006).
-	\end{itemize}
-\paragraph{Cons: } 
- \begin{itemize}	
-		\item Is always dependent on the server if the server breaks down or there is no connection to the server the application is useless. (Bea, 2006).
-	\end{itemize}
-
-
-\subsubsection{Access channels}
-\paragraph{SOAP VS REST}
-\paragraph{SOAP Simple Object Access Protocol}
-\begin{description}
-\item \hspace{4ex} 
-Is a protocol that exchanges structured information between computers in a network via XML.At first glance Soap might seem like a good protocol to use for buzz space because its well-known and takes advantage of different data. However generating Soap client code WSDLS and XSD’s is a very complex and this results in recoding the same app for different mobiles  which can be time consuming  (Cox, 2011).
-\end{description}
-
-
-\paragraph{REST Representational State Transfer}
-\begin{description}
-\item \hspace{4ex}
-Is a protocol that exchanges structured information between computers in a network via XML at first glance Soap might seem like a good protocol to use for buzz space because of its well-known and takes advantage of different data.\\  However generating Soap client code WSDLS and XSD’s is a very complex and this results in recoding the same app for different mobiles which can be time consuming  (Cox, 2011).
-\end{description}
-
-\subparagraph{REST Characteristics:}
-	\begin{itemize}
-	\item Rest is designed for thin clients  (Cox, 2011)
-	\item Rest connects the client to the server so most processing is done by server (Costello, 2005)
-	\item The Connection are Stateless (Costello, 2005)
- 	\item Resources in the Rest Architecture are located at specific URLS (Costello, 2005)
-	\end{itemize}
-
-\paragraph{Protocols:}
-For other devices to access the Buzz Space System network protocols will be needed
-\begin{itemize}
-\item IP-The Buzz Space system will be web based and will depend on the IP to connect to the internet (Olivier, 2012)
-\item HTTPS -will be used for secure connections to the system important details of the users will be kept safe (Olivier, 2012)
-\item SMTP and IMAP-This will allow the Lectures or Tutors to email the Students from the System (Olivier, 2012)
-\item SSL-will secure the shell in the background also used for security purposes (Olivier, 2012)
-\end{itemize}
-
-
-
-
-
 \subsubsection{Integration channel requirements}
-The buzz system needs to integrate with the LDAP server for the user information on login. We will create a module using the JNDI [1] API in order to make the connection to the LDAP server. This will be created as a seperate module so that it can be replaced to support a different system.\\
+The buzz system needs to integrate with the LDAP server for the user information on login. We will create a module using the JNDI API in order to make the connection to the LDAP server. This will be created as a seperate module so that it can be replaced to support a different system.\\
 \\
 For the backend we are going to be using JavaEE and to interface with the system we are going to make use of JSP and a Sprint protocol. This will mean that we can integrate with the thin web based client. It also means that we can make use of technologies like bootstrap to inharnce the web pages for moblie access.\\
 \\
 Due to the fact that we are going to be running JSP pages, we are going to need to make use of tomcat as the server base for the JSP pages to render on and integrate with our JavaEE backend.\\
 \\
-We are going to be making use of a postgreSQL database to store all the buzz generated information. To connect the system to the database we are going to make use of the JDBC driver [2].\\
+We are going to be making use of a postgreSQL database to store all the buzz generated information. To connect the system to the database we are going to make use of the JDBC driver and a JPA structure.\\
 \\
-We are going to make use of the JavaMail API [3] to intergrate the buzz system with an emailing protocol so that the buzz system can send emails and notifications to the users.\\
-\\
-Codejava.net,. 'Connecting To LDAP Server Using JNDI In Java'. N.p., 2015. Web. 5 Mar. 2015.  
-\\
-Mkyong.com,. 'Connect To Postgresql With JDBC Driver'. N.p., 2009. Web. 5 Mar. 2015.
-\\
-Tutorialspoint.com,. 'JSP - Sending Email'. N.p., 2015. Web. 5 Mar. 2015.
+We are going to make use of the JavaMail API to intergrate the buzz system with an emailing protocol so that the buzz system can send emails and notifications to the users.\\
