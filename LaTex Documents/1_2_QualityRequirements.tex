@@ -1,10 +1,10 @@
 ﻿\subsubsection{Usability}
-\\Usability is an important quality requirement needed by the system. It takes number one in the priority list. \\
+Usability is an important quality requirement needed by the system. It takes number one in the priority list. \\
 \\ We devide usability into this :\\
 \\
 \underline{Lenearbility\\}
 
-\\ The interface should be designed in such a way that it is easy to use and learn. If the user is a first time user then the system should not be hard to understand. The interface should not be complex for the user, it should include basic functions and fewer things to learn and remember.\\
+The interface should be designed in such a way that it is easy to use and learn. If the user is a first time user then the system should not be hard to understand. The interface should not be complex for the user, it should include basic functions and fewer things to learn and remember.\\
 \\
 \underline{Error Handling\\}
 \\The system should be able to handle errors made by users. Correct, prevent or even detect them. This will make the use of buzz system much better than  if it had unreported errors.Users will be allowed to perform certain operations based on their user level. Some functions will be deactivated for certain users. For example a guest user cannot post or even comment on a post. Such functionality will be hidden from the user preventing errors. Users will be notified if they exceed the maximum number of characters needed in a post or comment.\\
@@ -18,13 +18,13 @@ Acceptability is a subjective phenomenon to which many factors contribute, it me
 
 \subsubsection{Scalability}
 Scalability is going to be second most important quality attribute of the buzz space system. It is thus prioritized as being critical to the system. Scalability can be achieved on the buzz space system on many fronts including load, functional, administrative and generation scalability (Wikipedia, n.d.).\\
-\\
+
 Load scalability will be realized through the use dynamic data storage structures which can grow rapidly and also be traversed rapidly during operations such as searching and filtering. Coupled with recursive algorithms (that perform optimally on large data structures), the data storage algorithms (for transferring, searching, encoding/decoding etc.) will increase 10 fold in performance for every 100 users actively making use of the data storage structures.\\
-\\
+
 Functional scalability will be realized by continually improving the buzz system features. Features include allowing for the upload of virtually any types of files (if it’s not supported then archiving them before uploads would also work), using new thread pool API’s for threads and implementing methods that limit unnecessary features based on different users bandwidth (while still offering the maximum functionally of the buzz space). Users connected to up-to 1Mbps will receive the least amount of the buzz features, users using a 2-4Mbps line will receive above average features and users with 5Mbps+ lines will receive all of the buzz space features.\\
-\\ 
-Administrative scalability is not a major concern at the moment because the buzz system is limited to the members & students of the UP Computer Science department, but it will be realized by the Integrability of the buzz system (which is discussed separately in this document).\\
-\\
+
+Administrative scalability is not a major concern at the moment because the buzz system is limited to the members \& students of the UP Computer Science department, but it will be realized by the Integrability of the buzz system (which is discussed separately in this document).\\
+
 Generation scalability will be realized by using efficient MIME encoding that will complement the communication protocols used to provide swift feedback to multiple users on the system. The encoding will also assist with the transfer and storage of resources uploaded by the users.     
 \subsubsection{Performance}
 Performance will be a relatively low level priority (important but not critical).We are looking at providing the Buzz system to about a maximum of 3000 users. To cope with these demands and make the system secure as well as usable we will need an appropriately large system with the performance to match. We will also be looking at 90 percent uptime as any more would be too expensive and impact on other factors. We will also require the pages to load in a maximum of 10 seconds as any slower will have an impact on the usability.
@@ -41,20 +41,22 @@ The connection to the servers will be done using https and POST requests for pur
 \\
 \subsubsection{Maintainability}
 Maintainability of the buzz space system is considered a low priority, but necessary none the less. Maintainability can be achieved by making use of design patterns that promote modularity within the system (Microsoft Developer Network, n.d.). Defects, errors and updates in the buzz space system will then be easily isolated, allowing effortless repairs/replacements to be done on those modules without effecting the whole buzz system.\\
-\\
+
 
 \subsubsection{Availability and Reliability}
-\\
 \underline{Availability\\}
 \\The system need to be available for use when needed by the users. The system will be available to the users during school days and hours. However when the system will not be available at a certain period the administrator should announce in advance to the students. No period of downtime may exceed 6 hours on a weekend and not more than 20 minutes during school days. The systems resources should also be available when needed by the user, for example the notes uploaded by the lecturer. \\
 \\
 \underline{Reliability\\}
 \\The system should reliable in such a way that it will be easy to implement or make changes on it should any errors or failures occur, the system should be able to handle them and recover easily.\\
-Backtracking and transmission error & detection algorithms (Auto repeat requests) will maintain the systems efficiently, reliability and safety (Wikipedia, n.d.). This will allow for uncomplicated roll-backs during unavoidable system restores. This ensures probability of approximately 75 percent when it comes to retaining/restoring threads and resources to a specified condition within a given time period.\\
+Backtracking and transmission error \& detection algorithms (Auto repeat requests) will maintain the systems efficiently, reliability and safety (Wikipedia, n.d.). This will allow for uncomplicated roll-backs during unavoidable system restores. This ensures probability of approximately 75 percent when it comes to retaining/restoring threads and resources to a specified condition within a given time period.\\
 \\
 \subsubsection{Testability}
-Testability is also approximately leveled with maintainability when it comes to its prioritization within the buzz space system. This quality requirement will be achieved by firstly implementing testing early on in the development phase of the buzz system so that it can naturally extend (via maintainability) with the system as it scales up. The actual tests will be initially run on mock objects against a simple structured solutions (Microsoft Developer Network, n.d.). The modularity of the system will greatly assist the testability of it. The tests conducted on the system include input & output tests to check consistency (of resource transfer for example) and variation, there will also be network tests that monitor data rates and data packet activity to optimize the system’s network performance. Tests will utilize probing and debugging tools to achieve their purpose.\\
+Testability is also approximately leveled with maintainability when it comes to its prioritization within the buzz space system. This quality requirement will be achieved by firstly implementing testing early on in the development phase of the buzz system so that it can naturally extend (via maintainability) with the system as it scales up. The actual tests will be initially run on mock objects against a simple structured solutions (Microsoft Developer Network, n.d.). The modularity of the system will greatly assist the testability of it. The tests conducted on the system include input \& output tests to check consistency (of resource transfer for example) and variation, there will also be network tests that monitor data rates and data packet activity to optimize the system’s network performance. Tests will utilize probing and debugging tools to achieve their purpose.\\
 \\
+
+
+
 \subsubsection{Monitoribility and Auditability}
 This is one of the key  quality requirements. Running such a large scale platform requires a lot of responsibility. Audit trails are necessary to keep track of system-user interactions. Monitoring the system's performance over a certain period of time will also help immensely with any necessary improvements to be made on the system because the system's low points will be identified.\\
 Audit trail: "A record showing who has accessed a computer system and what operations he or she has performed during a given period of time. Audit trails are useful both for maintaining security and for recovering lost transactions. Most accounting systems and database management systems include an audit trail component. In addition, there are separate audit trail software products that enable network administrators to monitor use of network resources." - (Beal, 2015)\\
