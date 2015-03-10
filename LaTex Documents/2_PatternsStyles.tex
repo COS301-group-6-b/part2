@@ -27,9 +27,11 @@ Scalability: Bridge achieves scalabaility in that high level and low level servi
  \subsubsection{Layering}
  Description: The layering pattern components are organized in layers and each layer is assigned some kind of responsibility. (Solms, 2014)\\
  \\
+
  Quality Requirements using the layering pattern:\\
  \\
  Security: Layering separates the communication from the actual application meaning it is more difficult for users to see and intercept communication between the client and server.\\
+  \\Usability: The use of layering pattern which organizes the component in layers will be used by the system. This will improve the design of the system by providing responsibility for certain layers. Usability will involve designing websites so in this case the client access layer will be used to handle web pages. Network protocol layers will be used like TCP, IP and HTTP to transport the information over the network\\
  
 \subsubsection{Microkernel}
 Description: Microkernel is closely related to Bridge Pattern because it provides an infrastructure that handles requests from the user and the system at a high level and delegates the necessary actions to all the appropriate modules where these requests are handled and responses are returned.
@@ -37,3 +39,11 @@ Description: Microkernel is closely related to Bridge Pattern because it provide
 Quality Requirements using Microkernel pattern:\\
 \\
 Scalability: Microkernel makes scalability easier because because the infrastructure it provides ensures that the high level requirements of the system are unaware of the underlying infrastructure.\\
+
+\subsubsection{MVC}\\
+\\ Description : The aim of MVC is to reduce presentation layer complexity(Solms , 2014)\\
+
+\\Quality Requirements for MVC:\\
+
+\\Usabiliy:It reduces presentation layer complexity by separating the following : Model , View and Controller. This pattern will minimise the complexity of the functions as we present them to the users, It separates the the presentation and the controls.
+
