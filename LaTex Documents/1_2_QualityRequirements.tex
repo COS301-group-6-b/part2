@@ -1,20 +1,29 @@
-﻿\subsubsection{Usability}
+\subsubsection{Usability}
 Usability is an important quality requirement needed by the system. It takes number one in the priority list. \\
-\\ We devide usability into this :\\
-\\
-\underline{Lenearbility\\}
 
-The interface should be designed in such a way that it is easy to use and learn. If the user is a first time user then the system should not be hard to understand. The interface should not be complex for the user, it should include basic functions and fewer things to learn and remember.\\
-\\
-\underline{Error Handling\\}
-\\The system should be able to handle errors made by users. Correct, prevent or even detect them. This will make the use of buzz system much better than  if it had unreported errors.Users will be allowed to perform certain operations based on their user level. Some functions will be deactivated for certain users. For example a guest user cannot post or even comment on a post. Such functionality will be hidden from the user preventing errors. Users will be notified if they exceed the maximum number of characters needed in a post or comment.\\
-\\
-\underline{Acceptability\\}
-\\
-Acceptability is a subjective phenomenon to which many factors contribute, it measures the extent to which users like the system. The system should be created in such a way that the users are comfortable with and they actually like it, this can be achieved by  a technique called Usability Testing where  we have users that we use to test our system and get feedback from them by giving them questionaires which will require answers based on the system tey interacted with.\\
-\\
-\underline{Effectiveness \\}
-\\The system should be effective in such a way that it does the right tasks, completing activities and achieving the required goals. It should allow users to post, edit or delete based on their privileges.\\
+We devide usability into this :\\
+
+\underline{Lenearbility}\\
+
+The interface should be designed in such a way that it is easy to use and learn. If the user is a first time user then the system should not be hard to understand. 
+The interface should not be complex for the user, it should include basic functions and fewer things to learn and remember.\\
+
+\underline{Error Handling}\\
+
+The system should be able to handle errors made by users. Correct, prevent or even detect them. This will make the use of buzz system much better than  if it had unreported errors.
+Users will be allowed to perform certain operations based on their user level. Some functions will be deactivated for certain users. 
+For example a guest user cannot post or even comment on a post. Such functionality will be hidden from the user preventing errors. 
+Users will be notified if they exceed the maximum number of characters needed in a post or comment.\\
+
+
+\underline{Acceptability} \\
+
+Acceptability is a subjective phenomenon to which many factors contribute, it measures the extent to which users like the system. 
+The system should be created in such a way that the users are comfortable with and they actually like it, this can be achieved by  a technique called Usability Testing where  we have users that we use to test our system and get feedback from them by giving them questionaires which will require answers based on the system tey interacted with.\\
+
+
+\underline{Effectiveness} \\
+The system should be effective in such a way that it does the right tasks, completing activities and achieving the required goals. It should allow users to post, edit or delete based on their privileges.\\
 
 \subsubsection{Scalability}
 Scalability is going to be second most important quality attribute of the buzz space system. It is thus prioritized as being critical to the system. Scalability can be achieved on the buzz space system on many fronts including load, functional, administrative and generation scalability (Wikipedia, n.d.).\\
@@ -25,47 +34,62 @@ Functional scalability will be realized by continually improving the buzz system
 
 Administrative scalability is not a major concern at the moment because the buzz system is limited to the members \& students of the UP Computer Science department, but it will be realized by the Integrability of the buzz system (which is discussed separately in this document).\\
 
-Generation scalability will be realized by using efficient MIME encoding that will complement the communication protocols used to provide swift feedback to multiple users on the system. The encoding will also assist with the transfer and storage of resources uploaded by the users.     
+Generation scalability will be realized by using efficient MIME encoding that will complement the communication protocols used to provide swift feedback to multiple users on the system. The encoding will also assist with the transfer and storage of resources uploaded by the users. \\
+
 \subsubsection{Performance}
+
 Performance will be a relatively low level priority (important but not critical).We are looking at providing the Buzz system to about a maximum of 3000 users. To cope with these demands and make the system secure as well as usable we will need an appropriately large system with the performance to match. We will also be looking at 90 percent uptime as any more would be too expensive and impact on other factors. We will also require the pages to load in a maximum of 10 seconds as any slower will have an impact on the usability.
+
+
 \subsubsection{Security}
 Security will be a relatively low level priority (important but not critical) in the Buzz system as more importance will need to be placed on other aspects such as usability and scalability. A Secure system focuses on three main aspects, namely: to detect attacks, resist attacks and recover from attacks.\\
-\\
+
 We will, however, in the buzz system only be focusing on resisting attacks as most of the users will be members of an educational institution and we assume that they are ethical and will not try to attack using unconventional means.\\
-\\
+
 We will also be using LDAP (Lightweight Directory Access Protocol) to log the users in and have a secure way of connecting (Webopedia.com, 2015). LDAP is a set of protocols based on standards within the x.500 standard (Webopedia.com, 2015)\\
-\\
+
 Passwords should also be hashed, salted password hashing is the best way to do this to avoid the use of lookup tables, reverse lookup tables and rainbow lookup tables to find passwords (Crackstation.net, 2014). The SHA256 hashing function with salt added should be sufficient for our needs.\\
-\\
+
 The connection to the servers will be done using https and POST requests for purposes of hiding passwords. We will allow for 5 failed attempts to log in to the server and then block that user out for 5 minutes to discourage bot attacks, this might, however, have an impact on usability.\\
-\\
+
+
 \subsubsection{Maintainability}
 Maintainability of the buzz space system is considered a low priority, but necessary none the less. Maintainability can be achieved by making use of design patterns that promote modularity within the system (Microsoft Developer Network, n.d.). Defects, errors and updates in the buzz space system will then be easily isolated, allowing effortless repairs/replacements to be done on those modules without effecting the whole buzz system.\\
 
 
 \subsubsection{Availability and Reliability}
-\underline{Availability\\}
-\\The system need to be available for use when needed by the users. The system will be available to the users during school days and hours. However when the system will not be available at a certain period the administrator should announce in advance to the students. No period of downtime may exceed 6 hours on a weekend and not more than 20 minutes during school days. The systems resources should also be available when needed by the user, for example the notes uploaded by the lecturer. \\
-\\
-\underline{Reliability\\}
-\\The system should reliable in such a way that it will be easy to implement or make changes on it should any errors or failures occur, the system should be able to handle them and recover easily.\\
+
+\underline{Availability}\\
+
+The system need to be available for use when needed by the users. The system will be available to the users during school days and hours. However when the system will not be available at a certain period the administrator should announce in advance to the students. No period of downtime may exceed 6 hours on a weekend and not more than 20 minutes during school days. The systems resources should also be available when needed by the user, for example the notes uploaded by the lecturer. \\
+
+
+\underline{Reliability}\\
+The system should reliable in such a way that it will be easy to implement or make changes on it should any errors or failures occur, the system should be able to handle them and recover easily.\\
+
 Backtracking and transmission error \& detection algorithms (Auto repeat requests) will maintain the systems efficiently, reliability and safety (Wikipedia, n.d.). This will allow for uncomplicated roll-backs during unavoidable system restores. This ensures probability of approximately 75 percent when it comes to retaining/restoring threads and resources to a specified condition within a given time period.\\
-\\
+
 \subsubsection{Testability}
+
 Testability is also approximately leveled with maintainability when it comes to its prioritization within the buzz space system. This quality requirement will be achieved by firstly implementing testing early on in the development phase of the buzz system so that it can naturally extend (via maintainability) with the system as it scales up. The actual tests will be initially run on mock objects against a simple structured solutions (Microsoft Developer Network, n.d.). The modularity of the system will greatly assist the testability of it. The tests conducted on the system include input \& output tests to check consistency (of resource transfer for example) and variation, there will also be network tests that monitor data rates and data packet activity to optimize the system’s network performance. Tests will utilize probing and debugging tools to achieve their purpose.\\
-\\
 
 
 
 \subsubsection{Monitoribility and Auditability}
+
 This is one of the key  quality requirements. Running such a large scale platform requires a lot of responsibility. Audit trails are necessary to keep track of system-user interactions. Monitoring the system's performance over a certain period of time will also help immensely with any necessary improvements to be made on the system because the system's low points will be identified.\\
-Audit trail: "A record showing who has accessed a computer system and what operations he or she has performed during a given period of time. Audit trails are useful both for maintaining security and for recovering lost transactions. Most accounting systems and database management systems include an audit trail component. In addition, there are separate audit trail software products that enable network administrators to monitor use of network resources." - (Beal, 2015)\\
+Audit trail: \"A record showing who has accessed a computer system and what operations he or she has performed during a given period of time. Audit trails are useful both for maintaining security and for recovering lost transactions. Most accounting systems and database management systems include an audit trail component. In addition, there are separate audit trail software products that enable network administrators to monitor use of network resources.\" - (Beal, 2015)\\
+
 As far as the persistence infrastructure is concerned, a well-designed, well-managed database is already used to store all the user and course details. Buzz will use this database for any relevant user information. However,  another database has to be merged/incorporated to store all the system's data eg. All the threads created. By whom they were created in ralation to the users rights, levels and any other affiliations fo the course/system. This makes it a lot easier to generate reports flexibly instead of storing a number of reports in a database/file system after compiling them manually. This is great for monitoribilty. However, it doesn't help with Audit trails. A log file should be created that gets appended every time a user logs on, performs actions on the system and logs off. All the navigations and changes done by the user should be accounted for. What has been described sounds a lot like a cookie file. However, it is not.\\
-\\
+
+
 \subsubsection{Integrability}
+
 This particular requirement is not crucial. Neither is it pressingly important for Buzz. However, integrability is important for getting the System to work across as many platforms as possible. This goes from integrating the system from large websites to mobile sites for mobile users. This quality requirement can futher be extrapolated i.e. Some mobile sites are supported only by specific phones and specific mobile browsers. Of course this is merely a description on the the web user end of the system. Making Buzz space as integrable as possible means ensuring that all (or at least as many as possible) technologies are just plugins and can be changed or replaced at any point in time. This will require a development strategy that completely/mostly decouples the system's components from any external and additional components as well as from each other.\\
-"Integrability is defined as the total effort spent on defining inter-component link and component interfaces.  Maintainability is defined as the effort spent on making corrections to errors discovered during the design phase of system development." (Salman, 2006)\\
+
+\"Integrability is defined as the total effort spent on defining inter-component link and component interfaces.  Maintainability is defined as the effort spent on making corrections to errors discovered during the design phase of system development.\" (Salman, 2006)\\
+
 Mentioned above is a very nice explanation of what integrability is and how Maintainability can be used in Buzz to achieve this. The use of Component Based Software Engineering is an approach that helps in decoupling links between these interfaces. As far as the design of Buzz is concerned as per the Functional Requirements in the previous section, it should be very easy to achieve integrability without placing too much stress on it.\\
-\\
+
 
 
