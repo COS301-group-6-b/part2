@@ -18,7 +18,7 @@
 
 \subsubsection{Database technology}
 
-As an object-relational database management system we recommend considering PostgreSQL. There are many reasons to recommend postgres, but most importantly it is not difficult to use and:
+As an object-relational database management system we recommend considering PostgreSQL (Postgresql.org, 2015). There are many reasons to recommend postgres, but most importantly it is not difficult to use and:
 
 \begin{itemize}
 \item	It is ACID compliant
@@ -29,24 +29,23 @@ As an object-relational database management system we recommend considering Post
 
 \subsubsection{Application Framework}
 
-We are looking at the Spring Framework that works as a layer on top of Java EE. Quite a few reasons exist for this, but mainly because Spring:
+We are cinsidreing using Java EE as a framework, for various reasons including the following: 
 
 \begin{itemize}
 \item	Supports NoSQL databases like PostgreSQL.
-\item	Employs Model-View-Controller (MVC) architecture. 
-\item	Has a remote access framework that supports SOAP and Cobra. 
-\item	Has Classes for writing unit and integration test. 
-\item	Is not too difficult to learn. 
+\item	Has complete web services support. 
+\item	Supports JSP which will be used. 
+\item	Full HTML 5 support. 
+\item  Supports RESTful web services. 
+\item  Has full support for scalability. 
+\item Is not too difficult to learn. 
 \end{itemize}
 
-An alternative to Spring, is Django. A comparison can be seen here: \url{http://vschart.com/compare/spring-framework/vs/django-framework}
-
-One quite significant advantage of Spring is that it supports Domain Driven Design, which works very well with the way the BuzzSpace mini project is being structured. 
 
 \subsubsection{Application Server}
 
-The applications that will run on the BuzzSpace website have to have some sort of server to run on. One of the best Application servers that integrates well with the Spring framework, is the GlassFish Application server. Read more here: \url{https://glassfish.java.net/}
+The applications that will run on the BuzzSpace website have to have some sort of server to run on. One of the best Application servers that integrates well with the Java EE framework, is the GlassFish Application server. Read more here: \url{https://glassfish.java.net/}
 
 \subsubsection{Dependancy Management}
 
-We recommend the use of apache maven for dependency management. Apache Maven integrates well with the Spring Framework. 
+We recommend the use of apache maven for dependency management. Apache Maven integrates well with the Java EE Framework. 
